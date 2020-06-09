@@ -1,4 +1,4 @@
-# The `scrollbar-gutter` CSS property: explainer
+# Explainer: the `scrollbar-gutter` CSS property
 
 * Spec: https://www.w3.org/TR/css-overflow-4/
 * CSSWG Discussions:
@@ -21,9 +21,15 @@ The *scrollbar gutter* is the space between the inner border edge and the outer 
 
 The user agent determines whether classic scrollbars or overlay scrollbars are used. Likewise, the user agent also defines the appearance and size of scrollbars and whether they appear on the start or end edge of the box.
 
-## Values
+## Definition and values
 
-The values of this property have the following meaning:
+The syntax for the `scrollbar-gutter` property is:
+
+```
+auto | [ stable | always ] && both? && force?
+```
+
+These values have the following meaning:
 
 * `auto`: No changes from current behaviour. Default value.
 * `stable`: When using classic scrollbars, the gutter will be present if the *overflow* is *scroll* or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
@@ -32,7 +38,7 @@ The values of this property have the following meaning:
   * Use case: fix cases where an overlay scrollbar obscures content. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
   * Use case: more predictable Web engine layout tests across platforms. See: https://github.com/web-platform-tests/wpt/issues/10972
 
-Additionally, these two values can only be used in combination with the `stable` and `always`keywords:
+Additionally, these can only be used in combination with `stable` and `always`:
 
 * `both`: If a gutter would be present on one of the inline start/end edges of the box, another gutter must be present on the opposite edge as well.
   * Use case: simmetry between padding on both sides of the box.
