@@ -36,9 +36,9 @@ auto | [ stable | always ] && both? && force?
 These values have the following meaning:
 
 * `auto`: No changes from current behaviour. Default value.
-* `stable`: When using classic scrollbars, the gutter will be present if the *overflow* is *scroll* or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
+* `stable`: When using classic scrollbars, the gutter will be present if `overflow` is `scroll` or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
   * Use case: Prevent layout changes when the content grows or shrinks.
-* `always`: The scrollbar gutter is always present when overflow is scroll or auto, regardless of the type of scrollbar or of whether the box is overflowing.
+* `always`: The scrollbar gutter is always present when `overflow` is `scroll` or `auto`, regardless of the type of scrollbar or of whether the box is overflowing.
   * Use case: fix instances where an overlay scrollbar would obscure content. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
   * Use case: more predictable Web engine layout tests across platforms. See: https://github.com/web-platform-tests/wpt/issues/10972
 
@@ -48,7 +48,7 @@ These can only be used in combination with `stable` and `always`:
   * Use case: simmetry between padding on both sides of the box.
   * Use case: keep the layout stable regardless of the edge where the user agent decides to place the scrollbar.
 * `force`: the keywords `stable` and `always` are also in effect when `overflow` is `visible`, `hidden` or `clip`; only the gutter is displayed, not a scrollbar.
-  * Use case: reserve the same amount of space on the edges of an element that is adjacent to a stroller as is being reserved in the stroller itself, so that things would visually line up. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
+  * Use case: reserve the same amount of space on the edges of an element that is adjacent to a scrolling element as is being reserved in the latter, so that both elements line up visually. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
 
 ## Layout
 
