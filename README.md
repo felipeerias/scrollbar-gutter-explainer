@@ -1,5 +1,18 @@
 # Explainer: the `scrollbar-gutter` CSS property
 
+- Contents:
+  - [Author](#author)
+  - [Participate](#participate)
+  - [Introduction](#introduction)
+  - [Background](#background)
+  - [Definition and values](#definition-and-values)
+  - [Interaction between `overflow` and `scrollbar-gutter`](#interaction-between-overflow-and-scrollbar-gutter)
+  - [Layout](#layout)
+  - [Painting](#painting)
+  - [Illustrations 🌅](#illustrations-)
+  - [References](#references)
+
+
 ## Author
 
 * [Felipe Erias](felipeerias)
