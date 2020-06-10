@@ -50,6 +50,25 @@ These can only be used in combination with `stable` and `always`:
 * `force`: the keywords `stable` and `always` are also in effect when `overflow` is `visible`, `hidden` or `clip`; only the gutter is displayed, not a scrollbar.
   * Use case: reserve the same amount of space on the edges of an element that is adjacent to a scrolling element as is being reserved in the latter, so that both elements line up visually. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
 
+## Interaction between `overflow` and `scrollbar-gutter`
+
+This list summarizes the cases when space will be reserved for the scrollbar gutter:
+
+* Using **classic** scrollbars:
+  * when `overflow: scroll`
+  * when `overflow: auto` and
+    * `scrollbar-gutter: stable`
+    * `scrollbar-gutter: always`
+    * `scrollbar-gutter: auto` and the box is overflowing
+  * when `overflow` is `visible`, `hidden` or `clip`, and
+    * `scrollbar-gutter stable force`
+    * `scrollbar-gutter always force`
+* Using **overlay** scrollbars:
+  * when `overflow:scroll` or `auto` and
+    * `scrollbar-gutter: always`
+  * when `overflow: ` `visible`, `hidden` or `clip`, and
+    * `scrollbar-gutter always force`
+
 ## Layout
 
 For classic scrollbars, the width of the gutter is the same as the width of the scrollbar.
@@ -66,7 +85,7 @@ This property does not influence how the scrollbars themselves are painted.
 
 When the gutter is present but the scrollbar is not, or the scrollbar is transparent or otherwise does not fully obscure the gutter, the background of the gutter must be painted as an extension of the padding.
 
-## Illustrations
+## Illustrations 🌅
 
 Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars (using `overflow: auto;`):
 
