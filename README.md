@@ -26,7 +26,7 @@
 
 The `scrollbar-gutter` CSS property (defined in [CSS Overflow L4](https://www.w3.org/TR/css-overflow-4/)) gives control to Web authors over the presence of scrollbar gutters separately from the ability to control the presence of scrollbars provided by the `overflow` property.
 
-This allows authors to avoid layout changes when the content size changes, while also avoiding ugly visuals when scrolling isn't needed.
+This allows authors to avoid layout changes when the content size changes, while also avoiding unwanted visuals when scrolling isn't needed.
 
 ## Background
 
@@ -74,13 +74,13 @@ This list summarizes the cases when space will be reserved for the scrollbar gut
     * `scrollbar-gutter: always`
     * `scrollbar-gutter: auto` and the box is overflowing
   * when `overflow` is `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter stable force`
-    * `scrollbar-gutter always force`
+    * `scrollbar-gutter: stable force`
+    * `scrollbar-gutter: always force`
 * Using **overlay** scrollbars:
   * when `overflow:scroll` or `auto` and
     * `scrollbar-gutter: always`
   * when `overflow: ` `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter always force`
+    * `scrollbar-gutter: always force`
 
 ## Layout
 
