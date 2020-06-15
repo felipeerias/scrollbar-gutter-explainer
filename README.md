@@ -19,7 +19,7 @@
 
 ## Participate
 
-* Chromium intent-to-prototype (coming soon)
+* [Chromium intent-to-prototype](https://groups.google.com/a/chromium.org/d/msg/blink-dev/GErJ9WbxJrU/F8N2xl1kBgAJ)
 * [TAG design review](https://github.com/w3ctag/design-reviews/issues/520)
 
 ## Introduction
