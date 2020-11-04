@@ -110,7 +110,7 @@ Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (
 
 ## References
 
-* Spec: https://www.w3.org/TR/css-overflow-4/
+* Spec: https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property
 * CSSWG Discussions:
   * https://github.com/w3c/csswg-drafts/issues/92
   * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
