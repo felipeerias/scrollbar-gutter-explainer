@@ -1,0 +1,66 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>CSS scrollbar-gutter example 01</title>
+<link rel="author" title="Felipe Erias Morandeira" href="mailto:felipeerias@igalia.com" />
+
+<style>
+  body {
+    background: #DDDDDD;
+  }
+
+  .line {
+    display: inline-flex;
+    border: 1px solid gray;
+    background: #f6ddcc;
+  }
+
+  .separatorimg {
+    scrollbar-gutter: always both force;
+    writing-mode: vertical-rl;
+    height: 10em;
+    width: 4em;
+    object-fit: cover;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+
+  .container {
+    overflow: auto;
+    scrollbar-gutter: always both;
+    width: 16.55em;
+    height: 10em;
+  }
+
+  .vertical {
+    writing-mode: vertical-rl;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+</style>
+<body>
+  <div class="line">
+    <img class="separatorimg" src="https://picsum.photos/100/500"/>
+
+    <div class="container vertical">
+      以呂波耳本部止
+      千利奴流乎和加
+      餘多連曽津祢那
+      良牟有為能於久
+      耶万計不己衣天
+      阿佐伎喩女美之
+      恵比毛勢須
+    </div>
+
+    <img class="separatorimg" src="https://picsum.photos/100/501"/>
+
+    <div class="container vertical">
+      いろは歌とは、仮名を重複させずに使って作られた47字の誦文のこと。七五調の韻文となっており、のちに手習いの手本として広く受容され、近代にいたるまで用いられた。転じて「いろは」は初歩に習得しておくべき事という意味も持つ。またその仮名の配列は字母表の「いろは順」として、中世から近世の辞書類や番号付け等に広く利用された[1]。
+
+      七五調の歌謡である今様の形式で、仮名を重複させることなく作られている。天禄元年（970年）成立の『口遊』（源為憲著）は、同じく仮名を重複させない誦文天地の詞と大為爾の歌については記すが、いろは歌には触れておらず、またいろは歌を記した文献としては最古とされる『金光明最勝王経音義』（こんこうみょうさいしょうおうきょうおんぎ）は、承暦3年（1079年）の成立であることから、いろは歌は10世紀末から11世紀中葉までの間に成立したものとみられる。
+    </div>
+
+    <img class="separatorimg" src="https://picsum.photos/100/502"/>
+  </div>
+</body>
