@@ -24,7 +24,7 @@
 
 ## Introduction
 
-The `scrollbar-gutter` CSS property (defined in [CSS Overflow L4](https://www.w3.org/TR/css-overflow-4/)) gives control to Web authors over the presence of scrollbar gutters separately from the ability to control the presence of scrollbars provided by the `overflow` property.
+The `scrollbar-gutter` CSS property (defined in [CSS Overflow L4](https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property)) gives control to Web authors over the presence of scrollbar gutters separately from the ability to control the presence of scrollbars provided by the `overflow` property.
 
 This allows authors to avoid layout changes when the content size changes, while also avoiding unwanted visuals when scrolling isn't needed.
 
