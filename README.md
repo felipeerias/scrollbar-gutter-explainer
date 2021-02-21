@@ -110,8 +110,8 @@ Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (
 
 ### Examples:
 
-* Aligning LTR and RTL text, and images: [screenshot](images/example_01.png) [source](images/scrollbar_gutter_example_01.html)
-* Aligning vertical text containers: [screenshot](images/example_02.png) [source](images/scrollbar_gutter_example_02.html)
+* Aligning LTR and RTL text, and images: [screenshot](images/example_01.png), [source](images/scrollbar_gutter_example_01.html)
+* Aligning vertical text containers: [screenshot](images/example_02.png), [source](images/scrollbar_gutter_example_02.html)
 
 ## References
 
