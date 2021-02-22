@@ -21,12 +21,15 @@
 
 * [Chromium intent-to-prototype](https://groups.google.com/a/chromium.org/d/msg/blink-dev/GErJ9WbxJrU/F8N2xl1kBgAJ)
 * [TAG design review](https://github.com/w3ctag/design-reviews/issues/520)
+* [Chromium bug #710214](https://bugs.chromium.org/p/chromium/issues/detail?id=710214)
 
 ## Introduction
 
-The `scrollbar-gutter` CSS property (defined in [CSS Overflow L4](https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property)) gives control to Web authors over the presence of scrollbar gutters separately from the ability to control the presence of scrollbars provided by the `overflow` property.
+The `scrollbar-gutter` CSS property (defined in [CSS Overflow L4](https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property)) provides control over the presence of scrollbar gutters (the space which may be reserved to display a scrollbar).
 
-This allows authors to avoid layout changes when the content size changes, while also avoiding unwanted visuals when scrolling isn't needed.
+This gives Web authors more agency over how their layouts interact with the scrollbars provided by the browser, so they can e.g. prevent excessive layout changes as content expands while avoiding unwanted visuals when scrolling isn't needed.
+
+Note that the presence of the scrollbars themselves is determined by the `overflow` property and the decision of whether to use classical or overlay scrollbars is up to the user agent.
 
 ## Background
 
