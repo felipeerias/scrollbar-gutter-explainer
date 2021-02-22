@@ -73,20 +73,14 @@ This list summarizes the cases when space will be reserved for the scrollbar gut
 * Using **classic** scrollbars:
   * when `overflow` is `scroll`
   * when `overflow` is `auto` and
-    * `scrollbar-gutter` is one of
-      * `stable`
-      * `always`
-      * `auto` and the box is overflowing
+    * `scrollbar-gutter` uses `stable`, `always`, or (when the box is overflowing) `auto` 
   * when `overflow` is `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter` includes
-      * `force`
+    * `scrollbar-gutter` uses `force` together with `stable` or `always`
 * Using **overlay** scrollbars:
   * when `overflow` is `scroll` or `auto` and
-    * `scrollbar-gutter` is
-      * `always`
+    * `scrollbar-gutter` uses `always`
   * when `overflow: ` `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter` includes
-      * `always` and `force`
+    * `scrollbar-gutter` uses `force` together with `always`
 
 ## Layout
 
