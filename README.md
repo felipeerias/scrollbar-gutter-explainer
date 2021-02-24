@@ -119,3 +119,6 @@ Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (
 * CSSWG Discussions:
   * https://github.com/w3c/csswg-drafts/issues/92
   * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
+  * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-575027040
+  * https://github.com/web-platform-tests/wpt/issues/10972#issuecomment-395262455
+  
