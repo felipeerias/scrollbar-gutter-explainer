@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>CSS scrollbar-gutter example 04</title>
+<link rel="author" title="Felipe Erias Morandeira" href="mailto:felipeerias@igalia.com" />
+
+<style>
+  body {
+    --grey20: rgb(18.94% 18.94% 18.94%);
+    --grey40: rgb(36.96% 36.95% 36.95%);
+    --grey60: rgb(56.69% 56.69% 56.68%);
+    --grey80: rgb(77.78% 77.78% 77.77%);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  ul {
+    border: 1px solid var(--grey40);
+    width: 300px;
+    max-height: 10em;
+    overflow: auto;
+  }
+
+  li:nth-child(2n) {
+    background: var(--grey80);
+  }
+
+  ul.with_scrollbar_gutter {
+    scrollbar-gutter: always;
+  }
+
+  div {
+    border: 1px solid var(--grey60);
+    width: 300px;
+    text-align: right;
+  }
+
+  div.with_scrollbar_gutter {
+    scrollbar-gutter: always force;
+  }
+
+</style>
+
+<body>
+  <h1>My Todo List</h1>
+
+  <p>without scrollbar-gutter</p>
+
+  <div>Check all<input type=checkbox></div>
+  <ul>
+    <li>Lorem ipsum dolor sit amet <input type="checkbox" /></li>
+    <li>Consectetur adipiscing elit <input type="checkbox" /></li>
+    <li>Sed do eiusmod tempor <input type="checkbox" /></li>
+    <li>Incididunt ut labore et <input type="checkbox" /></li>
+    <li>Dolore magna aliqua <input type="checkbox" /></li>
+    <li>Ut enim ad minim veniam <input type="checkbox" /></li>
+    <li>Quis nostrud exercitation <input type="checkbox" /></li>
+    <li>Ullamco laboris nisi ut <input type="checkbox" /></li>
+    <li>Aliquip ex ea commodo consequat <input type="checkbox" /></li>
+    <li>Duis aute irure dolor in <input type="checkbox" /></li>
+    <li>Reprehenderit in voluptate <input type="checkbox" /></li>
+    <li>Velit esse cillum dolore eu <input type="checkbox" /></li>
+    <li>Fugiat nulla pariatur <input type="checkbox" /></li>
+    <li>Excepteur sint occaecat <input type="checkbox" /></li>
+    <li>Cupidatat non proident <input type="checkbox" /></li>
+    <li>Sunt in culpa qui officia <input type="checkbox" /></li>
+    <li>Deserunt mollit anim <input type="checkbox" /></li>
+    <li>Id est laborum <input type="checkbox" /></li>
+  </ul>
+
+  <p>container uses scrollbar-gutter: always<br/>
+  "check all" uses scrollbar-gutter: always force</p>
+
+  <div class="with_scrollbar_gutter">Check all<input type=checkbox></div>
+  <ul class="with_scrollbar_gutter">
+    <li>Lorem ipsum dolor sit amet <input type="checkbox" /></li>
+    <li>Consectetur adipiscing elit <input type="checkbox" /></li>
+    <li>Sed do eiusmod tempor <input type="checkbox" /></li>
+    <li>Incididunt ut labore et <input type="checkbox" /></li>
+    <li>Dolore magna aliqua <input type="checkbox" /></li>
+    <li>Ut enim ad minim veniam <input type="checkbox" /></li>
+    <li>Quis nostrud exercitation <input type="checkbox" /></li>
+    <li>Ullamco laboris nisi ut <input type="checkbox" /></li>
+    <li>Aliquip ex ea commodo consequat <input type="checkbox" /></li>
+    <li>Duis aute irure dolor in <input type="checkbox" /></li>
+    <li>Reprehenderit in voluptate <input type="checkbox" /></li>
+    <li>Velit esse cillum dolore eu <input type="checkbox" /></li>
+    <li>Fugiat nulla pariatur <input type="checkbox" /></li>
+    <li>Excepteur sint occaecat <input type="checkbox" /></li>
+    <li>Cupidatat non proident <input type="checkbox" /></li>
+    <li>Sunt in culpa qui officia <input type="checkbox" /></li>
+    <li>Deserunt mollit anim <input type="checkbox" /></li>
+    <li>Id est laborum <input type="checkbox" /></li>
+  </ul>
+
+</body>

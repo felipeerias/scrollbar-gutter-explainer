@@ -5,22 +5,29 @@
 
 <style>
   body {
-    background: #DDDDDD;
+    --grey20: rgb(18.94% 18.94% 18.94%);
+    --grey40: rgb(36.96% 36.95% 36.95%);
+    --grey60: rgb(56.69% 56.69% 56.68%);
+    --grey80: rgb(77.78% 77.78% 77.77%);
   }
 
   .column {
-    display: inline-block;
-    border: 1px solid gray;
-    background: #f6ddcc;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid var(--grey20);
   }
 
-  .headerimg {
+  .divider {
     scrollbar-gutter: always both force;
+  	display: flex;
+	  justify-content: space-between;
     width: 20em;
-    height: 4em;
+    height: 2em;
     object-fit: cover;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    border: 1px solid var(--grey60);
+    align-items: center;
   }
 
   .container {
@@ -28,6 +35,7 @@
     scrollbar-gutter: always both;
     width: 20em;
     height: 10em;
+    border: 1px solid var(--grey40);
   }
 
   .ltr {
@@ -39,20 +47,27 @@
   }
 </style>
 <body>
+  <p>containers use scrollbar-gutter: always both<br/>
+    dividers use scrollbar-gutter: always both force</p>
+
   <div class="column">
-    <img class="headerimg" src="https://picsum.photos/500/100"/>
+    <div class="divider">
+    <div>Header</div>
+    <div>Header</div>
+    </div>
 
     <div class="container ltr">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     </div>
-
-    <img class="headerimg" src="https://picsum.photos/500/101"/>
 
     <div class="container rtl">
       و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟
       علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم . من المفترض أن نفرق بين هذه الحالات بكل سهولة ومرونة. في ذاك الوقت عندما تكون قدرتنا علي الاختيار غير مقيدة بشرط وعندما لا نجد ما يمنعنا أن نفعل الأفضل فها نحن نرحب بالسرور والسعادة ونتجنب كل ما يبعث إلينا الألم. في بعض الأحيان ونظراً للالتزامات التي يفرضها علينا الواجب والعمل سنتنازل غالباً ونرفض الشعور بالسرور ونقبل ما يجلبه إلينا الأسى. الإنسان الحكيم عليه أن يمسك زمام الأمور ويختار إما أن يرفض مصادر السعادة من أجل ما هو أكثر أهمية أو يتحمل الألم من أجل ألا يتحمل ما هو أسوأ.
     </div>
 
-    <img class="headerimg" src="https://picsum.photos/500/102"/>
+    <div class="divider">
+      <div>Footer</div>
+      <div>Footer</div>
+      </div>
   </div>
 </body>
