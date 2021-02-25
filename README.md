@@ -113,18 +113,18 @@ Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (
 The [examples folder](/examples) contains several examples of `scrollbar-gutter` in use.
 
 * [scrollbar_gutter_example_01.html](examples/scrollbar_gutter_example_01.html) uses `stable`, `both` and `force` to display LTR and RTL text.
-  * [with fixed scrollbars](images/example01-fixed-scrollbars.png), [with overlay scrollbars](images/example01-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example01-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example01-overlay-scrollbars.png)
 * [scrollbar_gutter_example_02.html](examples/scrollbar_gutter_example_02.html) is similar to the previous but using `always`.
-  * [with fixed scrollbars](images/example02-fixed-scrollbars.png), [with overlay scrollbars](images/example02-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example02-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example02-overlay-scrollbars.png)
 * [scrollbar_gutter_example_03.html](examples/scrollbar_gutter_example_03.html) uses `stable`, `both` and `force` to display vertical text.
-  * [with fixed scrollbars](images/example03-fixed-scrollbars.png), [with overlay scrollbars](images/example03-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example03-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example03-overlay-scrollbars.png)
 * [scrollbar_gutter_example_04.html](examples/scrollbar_gutter_example_04.html) is similar to the previous but using `always`.
-  * [with fixed scrollbars](images/example04-fixed-scrollbars.png), [with overlay scrollbars](images/example04-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example04-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example04-overlay-scrollbars.png)
 * [scrollbar_gutter_example_05.html](examples/scrollbar_gutter_example_05.html) shows a case where `always` is needed to prevent a list with interactive elements from being obscured by overlay scrollbars.
-  * [with fixed scrollbars](images/example05-fixed-scrollbars.png), [with overlay scrollbars](images/example05-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example05-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example05-overlay-scrollbars.png)
 * [scrollbar_gutter_example_06.html](examples/scrollbar_gutter_example_06.html) shows a case where an environment variable could be used together with `scrollbar-gutter`: each individual line item in the second list uses `force` to move the interactive element away from the overlay scrollbar, but this results in unnecesary space when the scrollbar is fixed.
   * A plausible solution would be to use `scrollbar-gutter: stable` together with an environment variable (holding the thickness of overlay scrollbars, if they are in use) to set the additional margin on the checkbox items.
-  * [with fixed scrollbars](images/example06-fixed-scrollbars.png), [with overlay scrollbars](images/example06-overlay-scrollbars.png)
+  * [with fixed scrollbars](examples/images/example06-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example06-overlay-scrollbars.png)
 
 
 ## References
