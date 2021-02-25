@@ -10,6 +10,7 @@
   - [Layout](#layout)
   - [Painting](#painting)
   - [Illustrations 🌅](#illustrations-)
+  - [Examples](#examples)
   - [References](#references)
 
 
@@ -108,7 +109,7 @@ Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (
 
 ![Overlay scrollbars](images/overlay.png)
 
-### Examples:
+## Examples:
 
 The [examples folder](/examples) contains several examples of `scrollbar-gutter` in use.
 
