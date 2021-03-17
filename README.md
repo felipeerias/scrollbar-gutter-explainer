@@ -126,6 +126,8 @@ The [examples folder](/examples) contains several examples of `scrollbar-gutter`
 * [scrollbar_gutter_example_06.html](examples/scrollbar_gutter_example_06.html) is an interesting scenario: each individual line item in the second list uses `force` to move the interactive element away from the overlay scrollbar while the background extends all the way to the edge of the box, but this results in unnecesary space when the scrollbar is fixed.
   * This is related to ongoing discussions about how to evolve `scrollbar-gutter` and/or other features (e.g. environment variables holding the different scrollbar sizes).
   * [with fixed scrollbars](examples/images/example06-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example06-overlay-scrollbars.png)
+* [scrollbar_gutter_example_07.html](examples/scrollbar_gutter_example_07.html) displays a long text with images; the text elements use `scrollbar-gutter: always both force` so they are centered and not covered by any scrollbars, while the images expand from edge to edge.
+  * [with fixed scrollbars](examples/images/example07-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example07-overlay-scrollbars.png)
 
 
 ## References
