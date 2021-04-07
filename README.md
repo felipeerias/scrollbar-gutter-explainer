@@ -127,7 +127,11 @@ The [examples folder](/examples) contains several examples of `scrollbar-gutter`
   * This is related to ongoing discussions about how to evolve `scrollbar-gutter` and/or other features (e.g. environment variables holding the different scrollbar sizes).
   * [with fixed scrollbars](examples/images/example06-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example06-overlay-scrollbars.png)
 * [scrollbar_gutter_example_07.html](examples/scrollbar_gutter_example_07.html) displays a long text with images; the text elements use `scrollbar-gutter: always both force` so they are centered and not covered by any scrollbars, while the images expand from edge to edge.
-  * [with fixed scrollbars](examples/images/example07-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example07-overlay-scrollbars.png)
+  * this works best [with overlay scrollbars](examples/images/example07-overlay-scrollbars.png), as there is unwanted space [with fixed scrollbars](examples/images/example07-fixed-scrollbars.png)
+* [scrollbar_gutter_example_08.html](examples/scrollbar_gutter_example_08.html) applies `scrollbar-gutter: stable both` to the viewport, to prevent layout changes as the main content grows. Note that this code has not been shipped yet (see https://github.com/w3c/csswg-drafts/issues/6079).
+  * [no scrolling](examples/images/example08-fixed-noscrolling.png)
+  * [with scrolling](examples/images/example08-fixed-scrolling.png)
+
 
 
 ## References
