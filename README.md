@@ -9,6 +9,7 @@
   - [Interaction between `overflow` and `scrollbar-gutter`](#interaction-between-overflow-and-scrollbar-gutter)
   - [Layout](#layout)
   - [Painting](#painting)
+  - [Propagation](#propagation)
   - [Illustrations 🌅](#illustrations-)
   - [Examples](#examples)
   - [References](#references)
@@ -99,6 +100,10 @@ This property does not influence how the scrollbars themselves are painted.
 
 When the gutter is present but the scrollbar is not, or the scrollbar is transparent or otherwise does not fully obscure the gutter, the background of the gutter must be painted as an extension of the padding.
 
+## Propagation
+
+The `scrollbar-gutter` value set on the root element is propagated to the viewport. See https://github.com/w3c/csswg-drafts/issues/6079 for more details.
+
 ## Illustrations 🌅
 
 Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars (using `overflow: auto;`):
@@ -128,7 +133,7 @@ The [examples folder](/examples) contains several examples of `scrollbar-gutter`
   * [with fixed scrollbars](examples/images/example06-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example06-overlay-scrollbars.png)
 * [scrollbar_gutter_example_07.html](examples/scrollbar_gutter_example_07.html) displays a long text with images; the text elements use `scrollbar-gutter: always both force` so they are centered and not covered by any scrollbars, while the images expand from edge to edge.
   * this works best [with overlay scrollbars](examples/images/example07-overlay-scrollbars.png), as there is unwanted space [with fixed scrollbars](examples/images/example07-fixed-scrollbars.png)
-* [scrollbar_gutter_example_08.html](examples/scrollbar_gutter_example_08.html) applies `scrollbar-gutter: stable both` to the viewport, to prevent layout changes as the main content grows. Note that this code has not been shipped yet (see https://github.com/w3c/csswg-drafts/issues/6079).
+* [scrollbar_gutter_example_08.html](examples/scrollbar_gutter_example_08.html) applies `scrollbar-gutter: stable both` to the viewport, to prevent layout changes as the main content grows.
   * [no scrolling](examples/images/example08-fixed-noscrolling.png)
   * [with scrolling](examples/images/example08-fixed-scrolling.png)
 
