@@ -102,7 +102,7 @@ When the gutter is present but the scrollbar is not, or the scrollbar is transpa
 
 ## Propagation
 
-The `scrollbar-gutter` value set on the root element is propagated to the viewport. See https://github.com/w3c/csswg-drafts/issues/6079 for more details.
+The `scrollbar-gutter` value set on the root element is propagated to the viewport. See https://github.com/w3c/csswg-drafts/issues/6079 for more details (specifically [this CSSWG discussion and agreements](https://github.com/w3c/csswg-drafts/issues/6079#issuecomment-816307011)).
 
 ## Illustrations 🌅
 
