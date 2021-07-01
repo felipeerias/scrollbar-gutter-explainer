@@ -48,51 +48,37 @@ The user agent determines whether classic scrollbars or overlay scrollbars are u
 The syntax for the `scrollbar-gutter` property is:
 
 ```
-auto | [ stable | always ] && both? && force?
+auto | stable && mirror?
 ```
 
 These values have the following meaning:
 
 * `auto`: No changes from current behaviour. Default value.
-* `stable`: When using classic scrollbars, the gutter will be present if `overflow` is `scroll` or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
+* `stable`: When using classic scrollbars, the gutter will be present if `overflow` is `hidden`, `scroll` or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
   * Use case: Prevent layout changes when the content grows or shrinks.
-* `always`: The scrollbar gutter is always present when `overflow` is `scroll` or `auto`, regardless of the type of scrollbar or of whether the box is overflowing.
-  * Use case: fix instances where an overlay scrollbar would obscure content. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
-  * Use case: more predictable Web engine layout tests across platforms. See: https://github.com/web-platform-tests/wpt/issues/10972
 
-These can only be used in combination with `stable` and `always`:
+The `stable` value can be used in combination with:
 
-* `both`: If a gutter would be present on one of the inline start/end edges of the box, another must be present on the opposite edge as well.
+* `mirror`: If a gutter would be present on one of the inline start/end edges of the box, another must be present on the opposite edge as well.
   * Use case: simmetry between padding on both sides of the box.
   * Use case: keep the layout stable regardless of the edge where the user agent decides to place the scrollbar.
-* `force`: the keywords `stable` and `always` are also in effect when `overflow` is `visible`, `hidden` or `clip`; only the gutter is displayed, not a scrollbar.
-  * Use case: reserve the same amount of space on the edges of an element that is adjacent to a scrolling element as is being reserved in the latter, so that both elements line up visually. See https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
+
+The spec also includes an informative section with current attempts at extending the `scrollbar-gutter` property to cover more use cases: [Appendix A: Possible extensions for scrollbar-gutter](https://drafts.csswg.org/css-overflow-4/#sbg-ext).
 
 ## Interaction between `overflow` and `scrollbar-gutter`
 
-This list summarizes the cases when space will be reserved for the scrollbar gutter:
+These are the contexts when space will be reserved for the scrollbar gutter:
 
 * Using **classic** scrollbars:
   * when `overflow` is `scroll`
   * when `overflow` is `auto` and
-    * `scrollbar-gutter` uses `stable`, `always`, or (when the box is overflowing) `auto` 
-  * when `overflow` is `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter` uses `force` together with `stable` or `always`
-* Using **overlay** scrollbars:
-  * when `overflow` is `scroll` or `auto` and
-    * `scrollbar-gutter` uses `always`
-  * when `overflow: ` `visible`, `hidden` or `clip`, and
-    * `scrollbar-gutter` uses `force` together with `always`
+    * `scrollbar-gutter` uses `stable` or (when the box is overflowing) `auto` 
+  * when `overflow` is `hidden` and
+    * `scrollbar-gutter` uses `stable`
 
 ## Layout
 
 For classic scrollbars, the width of the gutter is the same as the width of the scrollbar.
-
-For overlay scrollbars, the width of the gutter is defined by the user agent, with the following constraints:
-
-* the width must not be 0
-* it must not change based on user interactions with the page or the scrollbar (even if the scrollbar itself changes)
-* it must be the same for all elements in the page
 
 ## Painting
 
@@ -109,10 +95,6 @@ The `scrollbar-gutter` value set on the root element is propagated to the viewpo
 Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars (using `overflow: auto;`):
 
 ![Classic scrollbars](images/classic.png)
-
-Effect of different values of `scrollbar-gutter` with ***overlay*** scrollbars (using `overflow: auto;`):
-
-![Overlay scrollbars](images/overlay.png)
 
 ## Examples:
 
