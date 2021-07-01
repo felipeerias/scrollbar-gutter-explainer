@@ -101,7 +101,6 @@ Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars:
 * Spec: https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property
 * CSSWG Discussions:
   * https://github.com/w3c/csswg-drafts/issues/92
-  * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-577662037
-  * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-575027040
+  * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-857841639
   * https://github.com/web-platform-tests/wpt/issues/10972#issuecomment-395262455
   
