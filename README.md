@@ -98,22 +98,26 @@ Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars:
 
 ## Examples
 
-`scrollbar-gutter` with horizontal text:
+### `scrollbar-gutter` with horizontal text
 
 * source: [scrollbar_gutter_example_01.html](examples/scrollbar_gutter_example_01.html)
 ![screenshot](examples/images/example_1.png)
 
-`scrollbar-gutter` with vertical text:
+### `scrollbar-gutter` with vertical text
 
 * source: [scrollbar_gutter_example_02.html](examples/scrollbar_gutter_example_02.html)
 
 ![screenshot](examples/images/example_2.png)
 
-`scrollbar-gutter` on the root element of the page:
+### `scrollbar-gutter` on the root element of the page
 
 * source: [scrollbar_gutter_example_03.html](examples/scrollbar_gutter_example_03.html)
 
+Before scrolling:
+
 ![screenshot without scrolling](examples/images/example_3.png)
+
+With scrolling:
 
 ![screenshot with scrolling](examples/images/example_3_scrolling.png)
 
