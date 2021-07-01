@@ -92,34 +92,9 @@ The `scrollbar-gutter` value set on the root element is propagated to the viewpo
 
 ## Illustrations 🌅
 
-Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars (using `overflow: auto;`):
+Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars:
 
 ![Classic scrollbars](images/classic.png)
-
-## Examples:
-
-The [examples folder](/examples) contains several examples of `scrollbar-gutter` in use.
-
-* [scrollbar_gutter_example_01.html](examples/scrollbar_gutter_example_01.html) uses `stable`, `both` and `force` to display LTR and RTL text.
-  * [with fixed scrollbars](examples/images/example01-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example01-overlay-scrollbars.png)
-* [scrollbar_gutter_example_02.html](examples/scrollbar_gutter_example_02.html) is similar to the previous but using `always`.
-  * [with fixed scrollbars](examples/images/example02-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example02-overlay-scrollbars.png)
-* [scrollbar_gutter_example_03.html](examples/scrollbar_gutter_example_03.html) uses `stable`, `both` and `force` to display vertical text.
-  * [with fixed scrollbars](examples/images/example03-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example03-overlay-scrollbars.png)
-* [scrollbar_gutter_example_04.html](examples/scrollbar_gutter_example_04.html) is similar to the previous but using `always`.
-  * [with fixed scrollbars](examples/images/example04-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example04-overlay-scrollbars.png)
-* [scrollbar_gutter_example_05.html](examples/scrollbar_gutter_example_05.html) shows a case where `always` is needed to prevent a list with interactive elements from being obscured by overlay scrollbars.
-  * [with fixed scrollbars](examples/images/example05-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example05-overlay-scrollbars.png)
-* [scrollbar_gutter_example_06.html](examples/scrollbar_gutter_example_06.html) is an interesting scenario: each individual line item in the second list uses `force` to move the interactive element away from the overlay scrollbar while the background extends all the way to the edge of the box, but this results in unnecesary space when the scrollbar is fixed.
-  * This is related to ongoing discussions about how to evolve `scrollbar-gutter` and/or other features (e.g. environment variables holding the different scrollbar sizes).
-  * [with fixed scrollbars](examples/images/example06-fixed-scrollbars.png), [with overlay scrollbars](examples/images/example06-overlay-scrollbars.png)
-* [scrollbar_gutter_example_07.html](examples/scrollbar_gutter_example_07.html) displays a long text with images; the text elements use `scrollbar-gutter: always both force` so they are centered and not covered by any scrollbars, while the images expand from edge to edge.
-  * this works best [with overlay scrollbars](examples/images/example07-overlay-scrollbars.png), as there is unwanted space [with fixed scrollbars](examples/images/example07-fixed-scrollbars.png)
-* [scrollbar_gutter_example_08.html](examples/scrollbar_gutter_example_08.html) applies `scrollbar-gutter: stable both` to the viewport, to prevent layout changes as the main content grows.
-  * [no scrolling](examples/images/example08-fixed-noscrolling.png)
-  * [with scrolling](examples/images/example08-fixed-scrolling.png)
-
-
 
 ## References
 
