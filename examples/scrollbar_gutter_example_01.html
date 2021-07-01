@@ -18,8 +18,9 @@
   }
 
   .divider {
-    scrollbar-gutter: stable both force;
+    scrollbar-gutter: stable mirror;
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     width: 20em;
     height: 2em;
@@ -32,7 +33,7 @@
 
   .container {
     overflow: auto;
-    scrollbar-gutter: stable both;
+    scrollbar-gutter: stable mirror;
     width: 20em;
     height: 10em;
     border: 1px solid var(--grey40);
@@ -47,9 +48,6 @@
   }
 </style>
 <body>
-  <p>containers use scrollbar-gutter: stable both<br/>
-    dividers use scrollbar-gutter: stable both force</p>
-
   <div class="column">
     <div class="divider">
     <div>Header</div>

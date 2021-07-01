@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>CSS scrollbar-gutter example 02</title>
+<title>CSS scrollbar-gutter example 03</title>
 <link rel="author" title="Felipe Erias Morandeira" href="mailto:felipeerias@igalia.com" />
 
 <style>
@@ -11,18 +11,21 @@
     --grey80: rgb(77.78% 77.78% 77.77%);
   }
 
-  .column {
+  .row {
+    writing-mode: vertical-rl;
     display: inline-flex;
     flex-direction: column;
     border: 1px solid var(--grey20);
   }
 
   .divider {
-    scrollbar-gutter: always both force;
-  	display: flex;
-	  justify-content: space-between;
-    width: 20em;
-    height: 2em;
+    scrollbar-gutter: stable mirror;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 2em;
+    height: 10em;
     object-fit: cover;
     margin-block-start: .5em;
     margin-block-end: .5em;
@@ -32,42 +35,41 @@
 
   .container {
     overflow: auto;
-    scrollbar-gutter: always both;
+    scrollbar-gutter: stable mirror;
     width: 20em;
-    height: 10em;
+    min-height: 10em;
     border: 1px solid var(--grey40);
-  }
-
-  .ltr {
-    direction: ltr;
-  }
-
-  .rtl {
-    direction: rtl;
+    width: 16.55em;
+    height: 10em;
   }
 </style>
+
 <body>
-  <p>containers use scrollbar-gutter: always both<br/>
-    dividers use scrollbar-gutter: always both force</p>
 
-  <div class="column">
+  <div class="row">
     <div class="divider">
-    <div>Header</div>
-    <div>Header</div>
+      <div>※</div>
+      <div>※</div>
     </div>
 
-    <div class="container ltr">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    </div>
-
-    <div class="container rtl">
-      و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟
-      علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم . من المفترض أن نفرق بين هذه الحالات بكل سهولة ومرونة. في ذاك الوقت عندما تكون قدرتنا علي الاختيار غير مقيدة بشرط وعندما لا نجد ما يمنعنا أن نفعل الأفضل فها نحن نرحب بالسرور والسعادة ونتجنب كل ما يبعث إلينا الألم. في بعض الأحيان ونظراً للالتزامات التي يفرضها علينا الواجب والعمل سنتنازل غالباً ونرفض الشعور بالسرور ونقبل ما يجلبه إلينا الأسى. الإنسان الحكيم عليه أن يمسك زمام الأمور ويختار إما أن يرفض مصادر السعادة من أجل ما هو أكثر أهمية أو يتحمل الألم من أجل ألا يتحمل ما هو أسوأ.
+    <div class="container vertical">
+      以呂波耳本部止千利奴流乎和加餘多連曽津祢那良牟有為能於久耶万計不己衣天阿佐伎喩女美之恵比毛勢須
     </div>
 
     <div class="divider">
-      <div>Footer</div>
-      <div>Footer</div>
-      </div>
+      <div>※</div>
+      <div>※</div>
+    </div>
+
+    <div class="container vertical">
+      いろは歌とは、仮名を重複させずに使って作られた47字の誦文のこと。七五調の韻文となっており、のちに手習いの手本として広く受容され、近代にいたるまで用いられた。転じて「いろは」は初歩に習得しておくべき事という意味も持つ。またその仮名の配列は字母表の「いろは順」として、中世から近世の辞書類や番号付け等に広く利用された[1]。
+
+      七五調の歌謡である今様の形式で、仮名を重複させることなく作られている。天禄元年（970年）成立の『口遊』（源為憲著）は、同じく仮名を重複させない誦文天地の詞と大為爾の歌については記すが、いろは歌には触れておらず、またいろは歌を記した文献としては最古とされる『金光明最勝王経音義』（こんこうみょうさいしょうおうきょうおんぎ）は、承暦3年（1079年）の成立であることから、いろは歌は10世紀末から11世紀中葉までの間に成立したものとみられる。
+    </div>
+
+    <div class="divider">
+      <div>※</div>
+      <div>※</div>
+    </div>
   </div>
 </body>

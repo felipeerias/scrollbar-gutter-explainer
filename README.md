@@ -96,6 +96,24 @@ Effect of different values of `scrollbar-gutter` with ***classic*** scrollbars:
 
 ![Classic scrollbars](images/classic.png)
 
+## Examples
+
+`scrollbar-gutter` with horizontal text:
+
+* source: [scrollbar_gutter_example_01.html](examples/scrollbar_gutter_example_01.html)
+* [screenshot](examples/images/example_1.png)
+
+`scrollbar-gutter` with vertical text:
+
+* source: [scrollbar_gutter_example_02.html](examples/scrollbar_gutter_example_02.html)
+* [screenshot](examples/images/example_2.png)
+
+`scrollbar-gutter` on the root element of the page:
+
+* source: [scrollbar_gutter_example_03.html](examples/scrollbar_gutter_example_03.html)
+* [screenshot without scrolling](examples/images/example_3.png)
+* [screenshot with scrolling](examples/images/example_3_scrolling.png)
+
 ## References
 
 * Spec: https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property
