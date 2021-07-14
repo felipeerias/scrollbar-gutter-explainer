@@ -48,7 +48,7 @@ The user agent determines whether classic scrollbars or overlay scrollbars are u
 The syntax for the `scrollbar-gutter` property is:
 
 ```
-auto | stable && mirror?
+auto | stable && both-edges?
 ```
 
 These values have the following meaning:
@@ -59,7 +59,7 @@ These values have the following meaning:
 
 The `stable` value can be used in combination with:
 
-* `mirror`: If a gutter would be present on one of the inline start/end edges of the box, another must be present on the opposite edge as well.
+* `both-edges`: If a gutter would be present on one of the inline start/end edges of the box, another must be present on the opposite edge as well.
   * Use case: simmetry between padding on both sides of the box.
   * Use case: keep the layout stable regardless of the edge where the user agent decides to place the scrollbar.
 
@@ -130,4 +130,5 @@ Source: [scrollbar_gutter_example_03.html](examples/scrollbar_gutter_example_03.
   * https://github.com/w3c/csswg-drafts/issues/92
   * https://github.com/w3c/csswg-drafts/issues/4674#issuecomment-857841639
   * https://github.com/web-platform-tests/wpt/issues/10972#issuecomment-395262455
+  * https://github.com/w3c/csswg-drafts/issues/6349#issuecomment-880053625
   
