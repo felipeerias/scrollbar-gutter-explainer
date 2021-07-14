@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>CSS scrollbar-gutter example 03</title>
-<link rel="author" title="Felipe Erias Morandeira" href="mailto:felipeerias@igalia.com" />
+<link rel="author" title="Felipe Erias" href="mailto:felipeerias@igalia.com" />
 
 <style>
   body {
@@ -19,7 +19,7 @@
   }
 
   .divider {
-    scrollbar-gutter: stable mirror;
+    scrollbar-gutter: stable both-edges;
     display: flex;
     overflow: hidden;
     flex-direction: row;
@@ -35,7 +35,7 @@
 
   .container {
     overflow: auto;
-    scrollbar-gutter: stable mirror;
+    scrollbar-gutter: stable both-edges;
     width: 20em;
     min-height: 10em;
     border: 1px solid var(--grey40);
