@@ -21,6 +21,7 @@
 
 ## Participate
 
+* [Chromium intent-to-ship](https://groups.google.com/a/chromium.org/g/blink-dev/c/71vtc_Xv7jk/m/EezoVS9dBQAJ)
 * [Chromium intent-to-prototype](https://groups.google.com/a/chromium.org/d/msg/blink-dev/GErJ9WbxJrU/F8N2xl1kBgAJ)
 * [TAG design review](https://github.com/w3ctag/design-reviews/issues/520)
 * [Chromium bug #710214](https://bugs.chromium.org/p/chromium/issues/detail?id=710214)
