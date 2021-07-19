@@ -62,7 +62,7 @@ These values have the following meaning:
 The `stable` value can be used in combination with:
 
 * `both-edges`: If a gutter would be present on one of the inline start/end edges of the box, another must be present on the opposite edge as well.
-  * Use case: simmetry between padding on both sides of the box.
+  * Use case: simmetry between padding on both sides of the box, so the content remains centered.
   * Use case: keep the layout stable regardless of the edge where the user agent decides to place the scrollbar.
 
 The spec also includes an informative section with current attempts at extending the `scrollbar-gutter` property to cover more use cases: [Appendix A: Possible extensions for scrollbar-gutter](https://drafts.csswg.org/css-overflow-4/#sbg-ext).
