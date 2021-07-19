@@ -56,7 +56,8 @@ These values have the following meaning:
 
 * `auto`: No changes from current behaviour. Default value.
 * `stable`: When using classic scrollbars, the gutter will be present if `overflow` is `hidden`, `scroll` or `auto` even if the box is not overflowing. When using overlay scrollbars, the gutter will not be present.
-  * Use case: Prevent layout changes when the content grows or shrinks.
+  * Use case: prevent layout changes when the content grows or shrinks.
+  * Use case: visually align the content in a header with the content in the list next to it (as `scrollbar-gutter: stable` and `overflow: hidden` will add a gutter on a non-scrollable element).
 
 The `stable` value can be used in combination with:
 
